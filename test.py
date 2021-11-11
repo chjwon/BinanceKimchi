@@ -5,6 +5,10 @@ from slack import post_message, myToken
 from exchanges.upbit import closePriceUpbit, coinListUpbit, start
 from exchanges.binance import binance, closePriceBinance, coinListBinance, orderbookBinance
 from exchanges.bithumb import closePriceBithumb, coinListBithumb
+from exchanges.coinbase import closePriceCoinbase, coinListCoinbase
+
+
+
 from time import time
 
 # current channel name : #binance_ats -> need fix
@@ -31,7 +35,7 @@ print("==test==")
 # print(coinListBinance)
 # print(coinListUpbit)
 # print(coinListBithumb) # fix
-#
+# print(coinListCoinbase) # fix
 # print(orderbookBinance['bids'][-1])
 # print(orderbookBinance['asks'][-1])
 
